@@ -23,7 +23,9 @@ exclude: |
   # Exclude the subteno agreement
   /subteno-agreement/|
   # Exclude OCA
-  /oca/
+  /oca/|
+  # Exclude scripts and migration scripts
+  /script/|/scripts/|/migrations/
 default_language_version:
   python: python3
   node: "16.17.0"
