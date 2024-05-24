@@ -12,7 +12,7 @@ extend-select = [
 ]
 extend-ignore = [
     "B023"
-]k
+]
 exclude = ["setup/*"]
 
 [format]
