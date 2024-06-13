@@ -19,7 +19,6 @@ enable=anomalous-backslash-in-string,
     attribute-deprecated,
     class-camelcase,
     dangerous-default-value,
-    dangerous-view-replace-wo-priority,
     development-status-allowed,
     duplicate-id-csv,
     duplicate-key,
@@ -82,7 +81,6 @@ enable=anomalous-backslash-in-string,
     website-manifest-key-not-valid-uri,
     xml-attribute-translatable,
     xml-deprecated-qweb-directive,
-    xml-deprecated-tree-attribute,
     external-request-timeout
 
 [REPORTS]

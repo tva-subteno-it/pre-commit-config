@@ -11,14 +11,7 @@ extend-select = [
     "UP",  # pyupgrade
 ]
 extend-ignore = [
-    "B023",
-    "F401",
-    "W503",
-    "E722",
-    "E124",
-    "E128",
-    "E131",
-    "F821"
+    "B023"
 ]
 exclude = ["setup/*"]
 
