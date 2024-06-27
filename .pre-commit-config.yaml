@@ -20,6 +20,10 @@ repos:
         entry: found a en.po file
         language: fail
         files: '[a-zA-Z0-9_]*/i18n/en\.po$'
+  - repo: https://github.com/psf/black
+    rev: 23.10.1
+    hooks:
+      - id: black
   - repo: https://github.com/sbidoul/whool
     rev: v0.5
     hooks:
