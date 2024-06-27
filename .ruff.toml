@@ -11,7 +11,8 @@ extend-select = [
     "UP",  # pyupgrade
 ]
 extend-ignore = [
-    "B023"
+    "B023",
+    "UP007",  # use | for type annotations
 ]
 exclude = ["setup/*"]
 
