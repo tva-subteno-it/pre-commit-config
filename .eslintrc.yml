@@ -135,7 +135,7 @@ rules:
   no-unsafe-finally: error
   no-unused-expressions: error
   no-unused-labels: error
-  no-unused-vars: error
+  no-unused-vars: off  # off to prevent false positives when using _super(...arguments)
   no-use-before-define: error
   no-useless-call: warn
   no-useless-computed-key: warn
