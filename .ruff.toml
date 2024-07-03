@@ -13,14 +13,16 @@ extend-select = [
 extend-ignore = [
     "B023",
     "UP007",  # use | for type annotations
+    "F821",  # undefined name
 ]
 exclude = ["setup/*"]
 
 [format]
 exclude = ["setup/*", "*.yml"]
+quote-style = "double"
 
 [per-file-ignores]
-"__init__.py" = ["I001"]  # ignore unused and unsorted imports in __init__.py
+"__init__.py" = ["I001", "F401"]  # ignore unused and unsorted imports in __init__.py
 "__manifest__.py" = ["B018"]  # useless expression
 
 [isort]
