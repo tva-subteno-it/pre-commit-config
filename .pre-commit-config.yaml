@@ -80,7 +80,6 @@ repos:
       - id: ruff
         args:
         - --fix
-        - --exit-non-zero-on-fix
         - --line-length=120
         - --config=$HOME/Projects/Tools/pre-commit-config/.ruff.toml
       - id: ruff-format
