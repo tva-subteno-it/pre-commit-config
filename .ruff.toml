@@ -1,6 +1,8 @@
 
 target-version = "py310"
 fix = true
+line-length = 120
+indent-width = 4
 
 [lint]
 extend-select = [
@@ -20,17 +22,18 @@ exclude = ["setup/*"]
 [format]
 exclude = ["setup/*", "*.yml"]
 quote-style = "double"
+indent-style = "space"
 
-[per-file-ignores]
+[lint.per-file-ignores]
 "__init__.py" = ["I001", "F401"]  # ignore unused and unsorted imports in __init__.py
 "__manifest__.py" = ["B018"]  # useless expression
 
-[isort]
+[lint.isort]
 section-order = ["future", "standard-library", "third-party", "odoo", "odoo-addons", "first-party", "local-folder"]
 
-[isort.sections]
+[lint.isort.sections]
 "odoo" = ["odoo"]
 "odoo-addons" = ["odoo.addons"]
 
-[mccabe]
+[lint.mccabe]
 max-complexity = 16

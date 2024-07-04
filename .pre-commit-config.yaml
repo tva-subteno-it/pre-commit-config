@@ -80,9 +80,10 @@ repos:
       - id: ruff
         args:
         - --fix
-        - --line-length=120
         - --config=$HOME/Projects/Tools/pre-commit-config/.ruff.toml
       - id: ruff-format
+        args:
+          - --config=$HOME/Projects/Tools/pre-commit-config/.ruff.toml
   - repo: https://github.com/OCA/pylint-odoo
     rev: v9.0.4
     hooks:
