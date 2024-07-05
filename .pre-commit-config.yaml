@@ -1,5 +1,10 @@
 # Exclude the subteno module as well as what's inside migrations/
-exclude: ^modules/customer/subteno/
+# Exclude the subteno module as well as what's inside migrations/
+exclude: |
+  (?x)(
+  ^modules/customer/subteno/ |
+  __manifest__.py
+  )
 # Only what's inside customer module is checked
 files: ^modules/customer/
 default_language_version:
@@ -80,6 +85,7 @@ repos:
       - id: ruff
         args:
         - --fix
+        - --exit-non-zero-on-fix
         - --config=$HOME/Projects/Tools/pre-commit-config/.ruff.toml
       - id: ruff-format
         args:
